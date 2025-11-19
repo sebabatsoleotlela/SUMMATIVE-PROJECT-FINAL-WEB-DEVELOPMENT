@@ -1,0 +1,185 @@
+
+/* index.css - Home Page Styles */
+:root {
+  --primary-blue: #1A3D5C;
+  --secondary-blue: #2A4D6C;
+  --accent-green: #4CAF50;
+  --accent-dark-green: #45a049;
+  --text-dark: #333;
+  --text-medium: #666;
+  --text-light: #999;
+  --background-light: #f8f9fa;
+  --white: #ffffff;
+  --border-light: #ddd;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-hover: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+/* Navigation */
+.main-nav {
+  background-color: var(--primary-blue);
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  background-color: var(--secondary-blue);
+  color: var(--accent-green);
+}
+
+/* Banner Section */
+.banner {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-hover);
+  margin: 2rem 0;
+}
+
+.get-started-btn {
+  display: inline-block;
+  background-color: var(--accent-green);
+  color: var(--white);
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-green);
+}
+
+.get-started-btn:hover {
+  background-color: transparent;
+  color: var(--accent-green);
+  transform: translateY(-2px);
+}
+
+/* Mission Section */
+.mission {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission-content p {
+  font-size: 1.3rem;
+  color: var(--text-medium);
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.mission-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .banner {
+    padding: 3rem 1rem;
+  }
+  
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+  }
+  
+  .mission {
+    padding: 3rem 1rem;
+  }
+  
+  .mission-content p {
+    font-size: 1.1rem;
+  }
+  
+  .get-started-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
+  }
+}

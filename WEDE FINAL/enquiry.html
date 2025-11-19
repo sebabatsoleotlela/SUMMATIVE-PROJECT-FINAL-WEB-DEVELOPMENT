@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit an inquiry about LaunchPAD services including internships, mentorship, and career development programs">
+  <meta name="keywords" content="service inquiry, internship inquiry, mentorship request, career program inquiry">
+  <title>LaunchPAD | Service Inquiry - Get Started with Our Programs</title>
+  <link rel="stylesheet" href="inquiry.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Inquiry Content -->
+  <main class="inquiry-container">
+    <header class="inquiry-header">
+      <h1>Service Inquiry</h1>
+      <p class="inquiry-subtitle">Tell us about your career goals and we'll help you find the right program</p>
+    </header>
+
+    <div class="inquiry-content">
+      <section class="inquiry-form-section">
+        <div id="form-messages"></div>
+        
+        <form id="inquiryForm" class="inquiry-form">
+          <div class="form-section">
+            <h3>Personal Information</h3>
+            
+            <div class="form-group">
+              <label for="full_name" class="required">Full Name</label>
+              <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="current_status">Current Status</label>
+              <select id="current_status" name="current_status">
+                <option value="">Select your current situation</option>
+                <option value="recent_graduate">Recent Graduate</option>
+                <option value="final_year">Final Year Student</option>
+                <option value="career_changer">Career Changer</option>
+                <option value="seeking_internship">Seeking Internship</option>
+                <option value="unemployed">Currently Unemployed</option>
+                <option value="employed_seeking_change">Employed but Seeking Change</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Services of Interest</h3>
+            
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="service_internship" name="services[]" value="internship">
+                <label for="service_internship">Internships and Project Programs</label>
+              </div>
+              
+              <div class="checkbox-item">
+                <input type="checkbox" id="service_mentorship" name="services[]" value="mentorship">
+                <label for="service_mentorship">Mentorship and Coaching</label>
+              </div>
+              
+              <div class="checkbox-item">
+                <input type="checkbox" id="service_networking" name="services[]" value="networking">
+                <label for="service_networking">Networking Events</label>
+              </div>
+              
+              <div class="checkbox-item">
+                <input type="checkbox" id="service_resume" name="services[]" value="resume">
+                <label for="service_resume">Resume and Interview Support</label>
+              </div>
+              
+              <div class="checkbox-item">
+                <input type="checkbox" id="service_placement" name="services[]" value="placement">
+                <label for="service_placement">Job Placement Assistance</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="preferred_industry">Preferred Industry</label>
+              <select id="preferred_industry" name="preferred_industry">
+                <option value="">Select your preferred industry</option>
+                <option value="technology">Technology & IT</option>
+                <option value="business">Business & Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="education">Education</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing & Communications</option>
+                <option value="creative">Creative Arts & Design</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Additional Information</h3>
+            
+            <div class="form-group">
+              <label for="message" class="required">Tell us about your career goals</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Please share your career aspirations, skills, experience, and what you hope to achieve with our programs..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="referral_source">How did you hear about us?</label>
+              <select id="referral_source" name="referral_source">
+                <option value="">Please select</option>
+                <option value="search_engine">Search Engine (Google, etc.)</option>
+                <option value="social_media">Social Media</option>
+                <option value="friend_referral">Friend Referral</option>
+                <option value="campus_event">Campus Event</option>
+                <option value="career_fair">Career Fair</option>
+                <option value="alumni">Alumni Recommendation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-group checkbox-item">
+              <input type="checkbox" id="privacy_consent" name="privacy_consent" required>
+              <label for="privacy_consent" class="required">
+                I agree to the Privacy Policy and consent to being contacted by LaunchPAD regarding career services.
+              </label>
+            </div>
+
+            <div class="form-group checkbox-item">
+              <input type="checkbox" id="newsletter_optin" name="newsletter_optin">
+              <label for="newsletter_optin">
+                I'd like to receive updates about career workshops, networking events, and internship opportunities.
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">Submit Inquiry</button>
+              <button type="reset" class="reset-btn">Clear Form</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="form-handler.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

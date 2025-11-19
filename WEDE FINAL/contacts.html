@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact LaunchPAD for career advice, internship information, and general inquiries about our services">
+  <meta name="keywords" content="contact LaunchPAD, career advice, internship information, general inquiry">
+  <title>LaunchPAD | Contact Us - Get in Touch</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Content -->
+  <main class="contact-container">
+    <header class="contact-header">
+      <h1>Contact Us</h1>
+      <p class="contact-subtitle">We're here to help you launch your career. Reach out to our team for personalized support.</p>
+    </header>
+
+    <div class="contact-content">
+      <section class="contact-info-section">
+        <h2>Contact Information</h2>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>+27 12 345 6789</p>
+              <small>Mon-Fri, 8:00 AM - 6:00 PM</small>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>info@launchpad.org</p>
+              <small>Response within 24 hours</small>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h3>Visit Us</h3>
+              <p>123 Career Road<br>Johannesburg, 2000<br>South Africa</p>
+              <small>By appointment only</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-hours">
+          <h3>Business Hours</h3>
+          <div class="hours-grid">
+            <div class="day-time">
+              <span class="day">Monday - Friday</span>
+              <span class="time">8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="day-time">
+              <span class="day">Saturday</span>
+              <span class="time">9:00 AM - 2:00 PM</span>
+            </div>
+            <div class="day-time">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <h2>Send us a Message</h2>
+        <p class="form-description">Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <div id="form-messages"></div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact_name" class="required">Full Name</label>
+              <input type="text" id="contact_name" name="contact_name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact_email" class="required">Email Address</label>
+              <input type="email" id="contact_email" name="contact_email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact_subject">Subject</label>
+            <select id="contact_subject" name="contact_subject">
+              <option value="">Select a topic</option>
+              <option value="general_inquiry">General Inquiry</option>
+              <option value="internship_info">Internship Information</option>
+              <option value="mentorship_info">Mentorship Program</option>
+              <option value="career_advice">Career Advice</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="technical_support">Technical Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact_message" class="required">Message</label>
+            <textarea id="contact_message" name="contact_message" rows="6" required placeholder="Please describe how we can help you..."></textarea>
+          </div>
+
+          <div class="form-group checkbox-item">
+            <input type="checkbox" id="contact_newsletter" name="contact_newsletter">
+            <label for="contact_newsletter">
+              Subscribe to our newsletter for career tips and opportunities
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="form-handler.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

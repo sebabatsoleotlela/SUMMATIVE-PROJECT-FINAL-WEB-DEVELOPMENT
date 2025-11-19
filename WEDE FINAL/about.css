@@ -1,0 +1,199 @@
+/* about.css - About Page Styles */
+:root {
+  --primary-blue: #1A3D5C;
+  --secondary-blue: #2A4D6C;
+  --accent-green: #4CAF50;
+  --accent-dark-green: #45a049;
+  --text-dark: #333;
+  --text-medium: #666;
+  --text-light: #999;
+  --background-light: #f8f9fa;
+  --white: #ffffff;
+  --border-light: #ddd;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+/* Navigation */
+.main-nav {
+  background-color: var(--primary-blue);
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.main-nav a:hover {
+  background-color: var(--secondary-blue);
+  color: var(--accent-green);
+}
+
+/* About Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--white);
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Mission & Values Section */
+.mission-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mission-card, .values-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover, .values-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card h2, .values-card h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--accent-green);
+  padding-bottom: 0.5rem;
+}
+
+.mission-card p {
+  color: var(--text-medium);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.values-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.values-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.values-list li:before {
+  content: "✓";
+  color: var(--accent-green);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.values-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .about-container {
+    padding: 1rem;
+  }
+  
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .mission-values {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .mission-card, .values-card {
+    padding: 2rem;
+  }
+  
+  .lead-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .mission-card h2, .values-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
+  }
+}
